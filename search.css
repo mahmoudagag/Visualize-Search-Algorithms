@@ -1,0 +1,151 @@
+#navbar{
+    display:flex;
+    justify-content:center;
+    padding-top:20px;
+}
+
+.button_text{
+    text-align:center;
+    color:white;
+}
+.grid{
+    display: grid;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    height: 700px;
+    grid-template-columns: repeat(60, 1fr) ;
+    grid-template-rows: repeat(20, 1fr) ;
+}
+.box{
+    background-color: white;
+    border:1px rgb(194, 194, 241) solid;
+}
+
+.coloryellow{
+    background-color: yellow;
+}
+.colorred{
+    background-color: red;
+}
+.colorblack{
+    background-color:black;
+    animation-name: block;
+    animation-duration: .5s;
+}
+.colorwhite{
+    background-color:white;
+}
+.pointer{
+    cursor: pointer;
+}
+.colorbutton{
+    height:35px;
+    width:31px;
+    border:1px rgb(194, 194, 241) solid;
+    margin:auto;
+}
+.newstart{
+    filter:brightness(50%);
+}
+@keyframes block{
+    from{
+        margin: 0 auto;
+        margin-top: 9px;
+        width: 50%;
+        height: 50%;
+        background-color:grey;
+        border-radius: 100%;
+    }to{
+        width: 100%;
+        height: 100%;
+        background-color:black;
+
+    }
+}
+
+#vistedNode{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(51, 184, 229); /*rgb(0, 153, 204);  rgb(51, 184, 229)*/ 
+    animation-name: visited;
+    animation-duration: 1s;
+}
+
+@keyframes visited{
+    from{
+        margin: 0 auto;
+        margin-top: 9px;
+        width: 50%;
+        height: 50%;
+        background-color:rgb(3, 168, 3);
+        border-radius: 100%;
+    }to{
+        width: 100%;
+        height: 100%;
+        background-color:rgb(51, 184, 229);
+
+    }
+}
+
+#finalpath{
+    width: 100%;
+    height: 100%;
+    background-color:green;
+    animation-name: final;
+    animation-duration: 1s;
+}
+
+@keyframes final{
+    from{
+        margin: 0 auto;
+        margin-top: 9px;
+        width: 50%;
+        height: 50%;
+        background-color:rgb(3, 168, 3);
+        border-radius: 100%;
+    }to{
+        width: 100%;
+        height: 100%;
+        background-color:green;
+
+    }
+}
+ul{
+    padding-right: 250px;
+
+}
+#searchingbutton{
+    margin-top:9px;
+}
+
+#maze{
+    margin-top:9px;
+}
+#clear{
+    margin-top:9px;
+}
+#visualize{
+    margin-top:9px;
+}
+li{
+    margin:10px;
+}
+#start{
+    margin-left: 10px;
+}
+#end{
+    margin-left: 10px;
+}
+#blocks{
+    margin-left: 10px;
+}
+#erase{
+    margin-left: 10px;
+}
+.invisible{
+    background-color: white;
+    height:35px;
+    width:31px
+}

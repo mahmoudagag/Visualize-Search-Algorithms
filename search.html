@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="search.css">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="search.js"></script>
+        <title>Search</title>
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Links -->
+            <ul class="navbar-nav">
+            <!-- Algos-->
+                <li class="nav-item dropdown">
+                    <div class="btn-group">
+                        <button id="searchingbutton" type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Searching Algorithms
+                        </button>
+                        <div id="algos" class="dropdown-menu">
+                            <a id="A" class="dropdown-item" href="#"> A*</a>
+                            <a id="GBFS" class="dropdown-item" href="#"> Greedy Best-First Search</a>
+                            <a id="BS" class="dropdown-item" href="#"> Bidirectional Search</a>
+                            <a id="BFS" class="dropdown-item" href="#">Breadth First Search (BFS)</a>
+                            <a id ="DFS" class="dropdown-item" href="#">Depth First Search (DFS)</a>
+                            <!--<a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </div>
+                </li>
+                <!-- Mazes-->
+                <li class="nav-item">
+                    <div class="btn-group">
+                        <button id='maze' type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mazes
+                        </button>
+                        <div class="dropdown-menu">
+                            <a id ="Maze1" class="dropdown-item" href="#">Maze 1</a>
+                            <a id ="Maze2" class="dropdown-item" href="#">Maze 2</a>
+                            <a id ="Maze3" class="dropdown-item" href="#">Maze 3</a>
+                        </div>
+                    </div>
+                </li>
+                <!-- claer-->
+                <li class="nav-item">
+                    <button id="clear" type="button" class="btn btn-dark" onclick="Clear()">Clear</button>
+                </li>
+                <!-- Visual-->
+                <li class="nav-item">
+                    <button type="button" class="btn btn-success" id="visualize" disabled>Visualize</button>
+                </li>
+                <!-- start-->
+                <li class="nav-item">
+                    <div class="button_text" id="start"> <!--id = startpl class=start-->
+                        Start
+                        <div id = 'start_color' class="pointer coloryellow colorbutton" draggable="true"></div> <!--id = start-->
+                    </div>
+                </li>
+                <!-- end-->
+                <li class="nav-item">
+                    <div class="button_text" id = "end">
+                        End
+                        <div id = 'end_color' class="pointer colorred colorbutton" draggable="true"></div>
+                    </div>
+                </li>
+                <!-- blocks-->
+                <li class="nav-item">
+                    <div class="button_text" id="blocks">
+                        Blocks
+                        <div id = 'black_color' class="colorbutton colorblack" ></div>
+                    </div>    
+                </li>
+                <li class="nav-item">
+                    <div class="button_text" id="erase">
+                        Erase
+                        <div id = 'white_color' class="colorbutton colorwhite newstart" ></div>
+                    </div>    
+                </li>
+            </ul>
+        </nav>
+
+        <div id="conatiner" class="grid"> 
+        </div>
+
+    </body>
+</html>
